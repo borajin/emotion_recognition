@@ -1,0 +1,41 @@
+.header{
+  display: flex;
+  justify-content: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.5)
+  }
+
+.header .header__software_logo,
+.header .header__university_logo {
+    height: 30px;
+    margin: 10px 5px 5px 10px;
+}
+
+.header .header__title {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 10px;
+    color:#1D2671;
+    float: right;
+  }
+
+  .header__logo {
+    flex-grow: 0.5;
+  }
+
+.header__description{
+  flex-grow: 3;
+  text-align: center;
+  line-height: 50px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+  .header__t {
+    flex-grow: 1;
+  }

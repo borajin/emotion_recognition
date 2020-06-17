@@ -1,0 +1,34 @@
+@import "reset.css";
+@import "header.css";
+@import "video.css";
+@import "bubble.css";
+@import "emotions.css";
+@import "footer.css";
+@import "background.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Nanum Pen Script', cursive;
+  background-color: gainsboro;
+}
+
+.section {
+  height:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+

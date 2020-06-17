@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>♥부산가톨릭대학교 소프트웨어학과 학과체험♥</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <div class="header">
+      <div class="header__logo">
+        <img class="header__software_logo" src = {{ url_for('static', filename='images/tit_logo.png') }} />
+        <img class="header__university_logo" src = {{ url_for('static', filename='images/vis_txt_02.png') }} />
+      </div>
+      <div class="header__description">
+        <span>인공지능(AI) 을 활용한 얼굴 감정 인식 애플리케이션</span>
+      </div>
+      <divc class="header__t">
+        <span class="header__title">학과전공체험</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <img class="background" src = {{ url_for('static', filename='images/background.gif') }} />
+      <div class="bg"></div>
+      <div class="emotions">
+        <div class="emotion">
+          <img class="emotion__img happy-img" src = {{ url_for('static', filename='images/emoji/happy.png') }} />
+          <span class="emotion__label">HAPPY</span>
+          <span class="emotion__rate happy-rate"></span>
+        </div>
+        <div class="emotion">
+          <img class="emotion__img sad-img" src = {{ url_for('static', filename='images/emoji/sad.png') }} />
+          <span class="emotion__label">SAD</span>
+          <span class="emotion__rate sad-rate"></span>
+        </div>
+        <div class="emotion">
+          <img class="emotion__img surprised-img" src = {{ url_for('static', filename='images/emoji/surprised.png') }} />
+          <span class="emotion__label">SURPRISED</span>
+          <span class="emotion__rate surprised-rate"></span>
+        </div>
+        <div class="emotion">
+          <img class="emotion__img neutral-img" src = {{ url_for('static', filename='images/emoji/neutral.png') }} />
+          <span class="emotion__label">NEUTRAL</span>
+          <span class="emotion__rate neutral-rate"></span>
+        </div>
+      </div>
+
+      <div class = "camera">
+        <div class="bubble">
+          <span class="big_emotion"></span>
+        </div>
+
+        <div class="video">
+          <img class="video__streaming" src="http://localhost:8888/">
+        </div>
+      </div>
+
+      <div class="emotions">
+        <div class="emotion">
+          <img class="emotion__img angry-img" src = {{ url_for('static', filename='images/emoji/angry.png') }} />
+          <span class="emotion__label">ANGRY</span>
+          <span class="emotion__rate angry-rate"></span>
+        </div>
+        <div class="emotion">
+          <img class="emotion__img disgust-img" src = {{ url_for('static', filename='images/emoji/disgust.png') }} />
+          <span class="emotion__label">DISGUST</span>
+          <span class="emotion__rate disgust-rate"></span>
+        </div>
+        <div class="emotion">
+          <img class="emotion__img scared-img" src = {{ url_for('static', filename='images/emoji/scared.png') }} />
+          <span class="emotion__label">SCARED</span>
+          <span class="emotion__rate scared-rate"></span>
+        </div>
+      </div>
+    </div>
+   
+    <div class="footer">
+      <img class="footer__logo" src= {{ url_for('static', filename='images/tit_logo2.png') }} />
+      <div>
+        <p>부산광역시 금정구 오륜대로 57(부곡3동 9번지) 부산가톨릭대학교 소프트웨어학과(정보공학관 2층 204호)
+          <br>TEL:051) 510-0649 FAX:051) 510-0648 
+          <br>Copyright 2020 by JINBORA - CATHOLIC UNIVERSITY OF PUSAN.</p>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src={{ url_for('static', filename='js/script.js') }}></script>
+    <script src={{ url_for('static', filename='js/background.js') }}></script>
+  </body>
+</html>
