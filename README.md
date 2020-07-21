@@ -1,5 +1,9 @@
 # emotion_recognition
 
+### 참고
+https://appliedmachinelearning.blog/2018/11/28/demonstration-of-facial-emotion-recognition-on-real-time-video-using-cnn-python-keras/
+https://github.com/omar178/Emotion-recognition
+
 ### 환경
 ```
 python==3.6.5
